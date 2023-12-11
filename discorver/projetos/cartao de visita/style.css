@@ -48,7 +48,9 @@ body * {
 #container0 {
   /* retiro a borda de marcação */
   /* border: 1px solid red; */
-  width: 360px;
+  /* width: 360px; */
+  width: 100%;
+  max-width: 588px;
   /* não coloco altura fixa  para que o conteúdo va aptando.   */
   /* height: 800px; */
 
