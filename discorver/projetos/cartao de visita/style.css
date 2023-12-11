@@ -3,22 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 } */
-:root{ 
+:root {
   /* variáveis no conteúdo   */
   /* --text-color: white; */
   --text-color: rgba(255, 255, 255, 1);
   --bg-url: url(./assets/bg-mobile.jpg);
-  --stroke-color-dark-mode:rgba(255, 255, 255, 0.5);
-  --surface-color-dark-mode: rgba(255, 255, 255, 0.10);
-  --surface-color-dark-mode-hover:rgba(255, 255, 255, 0.05);
+  --stroke-color-dark-mode: rgba(255, 255, 255, 0.5);
+  --surface-color-dark-mode: rgba(255, 255, 255, 0.1);
+  --surface-color-dark-mode-hover: rgba(255, 255, 255, 0.05);
   --highlight-color-light-mode: rgba(0, 0, 0, 0.2);
   --switch-bg-url: url(./assets/moon-starts.svg);
 }
-.light{
- 
+.light {
   --text-color: rgba(0, 0, 0, 1);
   --bg-url: url(./assets/bg-mobile-light.jpg);
-  --stroke-color-dark-mode:rgba(0, 0, 0, 0.50);
+  --stroke-color-dark-mode: rgba(0, 0, 0, 0.5);
   --surface-color-dark-mode: rgba(255, 255, 255, 0.05);
   --surface-color-dark-mode-hover: rgba(0, 0, 0, 0.02);
   --highlight-color-light-mode: rgba(0, 0, 0, 0.1);
@@ -89,7 +88,7 @@ a {
   line-height: 24px;
   margin-top: 8px;
 }
-#switch{
+#switch {
   /* border: 1px solid red; */
   /* Quero movimentar . com top left rigth */
   /* relativo ao button */
@@ -98,45 +97,51 @@ a {
   width: 64px;
   /* centralizando a div. displaybloq  alinhando */
   margin: 4px auto;
-
 }
 /* switch trocando os temas */
-#switch button{
+#switch button {
   width: 32px;
   height: 32px;
   background: white var(--switch-bg-url) no-repeat center;
   border: 0;
   border-radius: 50%;
-  
+
   position: absolute;
   /* navegando em qualquer lugar na pagina . 
   top: 0;
   left: 0; 
    bottom: 50%;*/
-   /* alinhando  de cima ou para baixo - tranformando o elemento */
-     transform: translateY(-50%);
-     /* tiro 50 depois coloco50 no top.
+  /* alinhando  de cima ou para baixo - tranformando o elemento */
+  transform: translateY(-50%);
+  /* tiro 50 depois coloco50 no top.
       */
-     top: 50%;
-     left: 0;
+  top: 50%;
+  left: 0;
+  /* animation */
+  animation: slide-back 0.2s;
   /* subindo os andares */
   z-index: 1;
-  
+}
+#switch button:hover {
+  /* é uma sombra no button */
+  outline: 8px solid var(--highlight-color-light-mode);
 }
 /*  fazendo a troca */
-.light #switch button{
-  right: 0;
-  left: initial;
+.light #switch button {
+  /* right: 0;
+  left: initial; */
+  /* usando animation . o forwards mantém apos o switch ser acionado*/
+  animation: slide-in 0.6s forwards;
 }
 
 /* Ele funciona como inline */
-#switch span{
+#switch span {
   display: block;
   width: 64px;
   height: 24px;
   flex-shrink: 0;
   background: var(--surface-color-dark-mode);
-  border:1px solid var(--stroke-color-dark-mode) ;
+  border: 1px solid var(--stroke-color-dark-mode);
   border-radius: 9999px;
   backdrop-filter: blur(4px);
 }
@@ -169,11 +174,10 @@ ul li a {
   padding: 16px 24px;
   border-radius: 8px;
   border-radius: 8px;
-  border: 1px solid var(--stroke-color-dark-mode, rgba(255, 255, 255, 0.50));
-  background: var(--surface-color-dark-mode, rgba(255, 255, 255, 0.10));
+  border: 1px solid var(--stroke-color-dark-mode, rgba(255, 255, 255, 0.5));
+  background: var(--surface-color-dark-mode, rgba(255, 255, 255, 0.1));
   backdrop-filter: blur(4px);
   transition: background 0.3s;
-
 }
 /* pseudo-selector quando eu passar o mouse por cima */
 ul li a:hover {
@@ -182,41 +186,55 @@ ul li a:hover {
   background: var(--surface-color-dark-mode-hover, rgba(255, 255, 255, 0.05));
   backdrop-filter: blur(4px);
 }
-#divsocial-links{
-  display:flex ;
+#divsocial-links {
+  display: flex;
   /* gap: 16px; */
   padding: 24px;
   justify-content: center;
-  
 }
-#divsocial-links a{
+#divsocial-links a {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 16px;
   transition: backkground 0.2s;
-
 }
 #divsocial-links a:hover {
-background:  var(--highlight-color-light-mode); 
-border-radius: 50%;
-
+  background: var(--highlight-color-light-mode);
+  border-radius: 50%;
 }
-footer{
+footer {
   padding: 24px;
   text-align: center;
   font-size: 14px;
-
-
 }
 /* media queries "atroom" -- é o arroba */
 /* adicione as regras acima do px setado . */
 @media (min-width: 768px) {
-
-:root {
-  --bg-url: url(./assets/bg-desktop.jpg);
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
   }
-  .light{
+  .light {
     --bg-url: url(./assets/bg-mobile-light.jpg);
+  }
+}
+
+/* animation */
+@keyframes slide-in {
+  /* onde vai começar */
+  fron {
+    left: 0;
+  }
+  /* onde vai terminar  */
+  to {
+    left: 50%;
+  }
+}
+@keyframes slide-back {
+  from {
+    left: 0;
+  }
+  to {
+    left: 0;
   }
 }
