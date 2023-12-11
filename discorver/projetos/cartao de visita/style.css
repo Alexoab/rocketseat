@@ -39,6 +39,7 @@ body {
 
   /* colocando em uma única propriedade(shorthand = atalho)  background: color image repeat position/size ;*/
   background: var(--bg-url) no-repeat top center / cover;
+  height: 100vh;
 }
 /* aplico em todo o corpo * seletor universal */
 body * {
@@ -208,4 +209,14 @@ footer{
 
 
 }
+/* media queries "atroom" -- é o arroba */
+/* adicione as regras acima do px setado . */
+@media (min-width: 768px) {
 
+:root {
+  --bg-url: url(./assets/bg-desktop.jpg);
+  }
+  .light{
+    --bg-url: url(./assets/bg-mobile-light.jpg);
+  }
+}
