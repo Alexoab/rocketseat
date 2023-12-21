@@ -1,0 +1,28 @@
+<style>
+  /* Escolho o seletor : p referente a um ou vários elementos */
+  p{
+    /* Propriedade : valor  */
+    color: blue;
+    font-size: 22px;
+  }
+  /* o lance da cascata se eu usar  o mesmo seletor o ultimo é que vai valer */
+  p{
+    color: blanchedalmond;
+  }
+  /* pegue o id representando */
+  /* o #a e mais especifico que o seletor p. */
+  #a{
+color: brown;
+font-size: large;
+  }
+  #b{
+  color: chartreuse;
+  }
+</style>
+
+<p> Aprendendo CSS: castle style sheet </p>
+<!-- usando id  -->
+<p id="a"> Aprendendo CSS: castle style sheet </p>
+<p id="b"> Aprendendo CSS: castle style sheet </p>
+<!-- regra de especifidade -->
+<p style="color: blueviolet;"> Aprendendo CSS  é um stilo </p>
