@@ -45,6 +45,9 @@ p ,#footer{
   font-size: 14px;
   line-height:28px;
 }
+#footer{
+  margin-bottom: 33px;
+}
 /* os seletores a + a => pegue o a anterior ao a com margin esquerda 20px  */
 footer a + a{
 margin-left: 20px;
@@ -55,3 +58,8 @@ height: 1px;
 border: 1px solid #ECEFF2 ;
 margin: 0 auto 8px;
 }
+ #balls{
+  position: fixed ;
+  bottom: 0%;
+  right: 0%;
+ }
