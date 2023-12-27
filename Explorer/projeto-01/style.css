@@ -3,6 +3,8 @@ body {
   text-align: center;
   /* por padrão os navegadores possuem 8px no body  */
   margin: 0;
+  /* rolagem  */
+  overflow: hidden;
 
 } 
 #hero{
@@ -24,8 +26,7 @@ h1{
   font-size: 49px;
   font-weight: normal;
   line-height: 56px;
-  margin-bottom: 32px;
-}
+ }
 /* repetindo propriedades 
 body,p ,a{
   font-family: 'Open Sans', sans-serif; 
@@ -45,16 +46,16 @@ p ,#footer{
   font-size: 14px;
   line-height:28px;
 }
-#footer{
+/* footer{
   margin-bottom: 33px;
-}
+} */
 /* os seletores a + a => pegue o a anterior ao a com margin esquerda 20px  */
 footer a + a{
 margin-left: 20px;
 }
 #line{
-width: 592px;
-height: 1px;
+width: 568px;
+height: 0;
 border: 1px solid #ECEFF2 ;
 margin: 0 auto 8px;
 }
