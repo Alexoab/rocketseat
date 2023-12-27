@@ -40,7 +40,7 @@ font-weight: bold;
 span,a {
   color:#FF9900 ;
 }
-p{
+p ,#footer{
   color: #7D7987;
   font-size: 14px;
   line-height:28px;
@@ -48,4 +48,10 @@ p{
 /* os seletores a + a => pegue o a anterior ao a com margin esquerda 20px  */
 footer a + a{
 margin-left: 20px;
+}
+#line{
+width: 592px;
+height: 1px;
+border: 1px solid #ECEFF2 ;
+margin: 0 auto 8px;
 }
