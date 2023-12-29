@@ -1,4 +1,4 @@
-<h1 align="center"> Cartão de visitas </h1>
+<h1 align="center"> Layout de uma pagina  </h1>
 
 <p align="center">
 Programa de cartão de visitas  tecnologias WEB. <br/>
@@ -8,6 +8,7 @@ Programa de cartão de visitas  tecnologias WEB. <br/>
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Sobre o desafio">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
@@ -27,13 +28,22 @@ Programa de cartão de visitas  tecnologias WEB. <br/>
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS
-- JavaScript
 - Git e Github
 - Figma
 
 ## 💻 Projeto
 
-O cartão de visitas  é um agregador de links para usar como cartão de visitas online.
+Uma aplicação, a partir de um layout pronto no Figma .
+# 💻 Sobre o desafio
+
+Nesse desafio, você deverá recriar uma aplicação, a partir de um layout pronto no Figma, para fortalecer alguns conceitos aprendidos nessa aula, entre eles:
+
+- Estruturando um projeto HTML;
+- Uso de tags HTML mais comuns;
+- Conceitos iniciais de CSS;
+- Posicionamento e alinhamento de elementos na tela;
+- Aplicando fontes customizadas;
+- Espaçamentos.
 
 - [Acesse o projeto finalizado, online](https://alexoab.github.io/cartaodevalexoab/)
 
@@ -41,7 +51,7 @@ O cartão de visitas  é um agregador de links para usar como cartão de visitas
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/LD2Qy49BIZOkrihEPZIOkU/DevLinks-%E2%80%A2-Projeto-Discover-(Community)?node-id=90%3A237&mode=dev). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/jxMMnSdmVfARgNJXWr4Mz3/Projeto01-Extra-(Copy)?node-id=56%3A2&mode=dev). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## :memo: Licença
 
