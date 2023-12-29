@@ -1,11 +1,24 @@
 
 body{
-  font-family: 'Dosis', sans-serif;
   font-family: 'Open Sans', sans-serif;
+  text-align: center; 
 }
-main{
-  
-width: 626px;
-height: 486px;
-
+#img1{
+  width: 350px;
+  height: 238px;
+  margin:64px auto 32px ; 
+}
+h1,span{
+  font-family: 'Dosis', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+span{
+  color: #EE24FF;
+  font-weight: 700;
+}
+.p1{
+  margin-bottom: 32px;
 }
