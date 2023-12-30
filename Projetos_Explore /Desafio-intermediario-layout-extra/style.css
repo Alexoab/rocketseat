@@ -2,6 +2,7 @@
 body{
   font-family: 'Open Sans', sans-serif;
   text-align: center; 
+  margin: 0;
 }
 #img1{
   width: 350px;
@@ -22,3 +23,27 @@ span{
 .p1{
   margin-bottom: 32px;
 }
+.p2{
+  margin-bottom: 64px;
+}
+.line{
+  border: 1px solid #ECEFF2 ;
+  width: 391px;
+  height: 0px;
+  margin: 0 auto 16px ;
+}
+a{
+  color: #3F3D56;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 147.682%;
+}
+footer a + a{
+  margin-left: 20px;
+ 
+  }
+  .wave{
+    
+    margin: auto;
+  }
