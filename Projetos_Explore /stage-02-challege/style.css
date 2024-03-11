@@ -1,0 +1,29 @@
+body{
+  margin: 0;
+  font-family:"Open Sans" sans-serif;
+  background-color: #3F3D54;
+}
+.page{
+  width: 1280px;
+  margin: 0 auto;
+  padding-top: 71px;
+}
+nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 101px;
+}
+ul{
+display: flex;
+gap: 64px;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+ul li a{
+  text-decoration: none;
+}
+nav ul a {
+  color:#FFFFFF;
+}
